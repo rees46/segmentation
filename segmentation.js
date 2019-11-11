@@ -1,8 +1,13 @@
 "use strict";
-((segmentsCount, gaSegmentName = "dimension1", whiteLabel = "rees46", days = 0) => {
+((segmentsCount = 2, gaSegmentName = "dimension1", whiteLabel = "rees46", days = 0) => {
     if (typeof segmentsCount != "number" || segmentsCount < 2 || segmentsCount > 26) {
-        console.log("The value of segments count must be a number and range from 2 to 26 inclusive");
-        return;
+        segmentsCount = 2;
+    }
+
+    if (typeof days != "number") {
+        days = 0;
+    } else {
+        days = Math.abs(Math.floor(days));
     }
 
     window[`${whiteLabel}_segments`] = window[`${whiteLabel}_segments`] || {};
@@ -36,14 +41,12 @@
             document.cookie = `${encodeURI(name)}=${encodeURI(value)}; ${expires}; ${domain}; path=/`;
         },
 
-
-
         ReadCookie(name) {
             let nameEQ = encodeURI(name) + "=";
             let ca = document.cookie.split(';');
             for (let i = 0; i < ca.length; i++) {
                 let c = ca[i].trim();
-                if (c.indexOf(nameEQ) === 0) return decodeURI(c.substring(nameEQ.length, c.length));
+                if (c.indexOf(nameEQ) === 0) return decodeURI(c.substring(nameEQ.length, c.length)).toUpperCase();
             }
             return null;
         },
