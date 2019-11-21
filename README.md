@@ -9,8 +9,8 @@ JS segmentation library for split tests with white label support
 - Sending visitor segment value to Google Analytics.;
 
 ### Files
-- `segmentator.js` is a complete JavaScript ES6 script
-- `segmentator.min.js` is a minified JavaScript ES5 script
+- `segmentator.js` is a complete JavaScript ES6 script, easy to modify according to your needs
+- `segmentator.min.js` is a minified JavaScript ES5 version of the full version for easy use
 
 ### Parameters
 ##### Number of segments
