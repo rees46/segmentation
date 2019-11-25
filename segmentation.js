@@ -72,4 +72,4 @@
         }
     }
     window[`${whiteLabel}_segments`].core.GetSegment(segmentsCount);
-})(3, "dimension1", "rees46");
+})(3, "dimension1", "rees46", 0);

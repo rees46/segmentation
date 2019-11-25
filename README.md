@@ -3,10 +3,10 @@ JS segmentation library for split tests with white label support
 
 ### Features
 
-- Assigns a visitor to one of the specified segments;
-- The maximum number of segments is 26, like the letters in the Latin alphabet from A to Z;
-- A visitor's belonging to a segment can be specified and can last for a session or a specified number of days;
-- Sending visitor segment value to Google Analytics.;
+- Assigns a visitor to one of the specified segments
+- The maximum number of segments is 26, like the letters in the Latin alphabet from A to Z
+- A visitor's belonging to a segment can be specified and can last for a session or a specified number of days
+- Sending visitor segment value to Google Analytics
 
 ### Files
 - `segmentator.js` is a complete JavaScript ES6 script, easy to modify according to your needs
